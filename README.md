@@ -1,8 +1,8 @@
 # OpenMP Benchmarks
 
-This repository contains reproduction scripts and collected results from master thesis titled **" Assessment of OpenMP constructs' performance on modern  multi-core architectures"**.
+This repository contains reproduction scripts and collected results from master thesis titled **"Assessment of OpenMP constructs' performance on modern  multi-core architectures"**.
 
-## Catalog Structure
+## Folder Structure
 - **compilers/** - this folder contains script which will download, build and install GCC and Clang compilers and download and install ICC and ICX compilers
 - **offloading_compilers/** - this folder contains script which will download, build and install GCC and Clang compilers with offloading to NVIDIA GPU's 
 - **openmp_benchmarks/** - this folder contains C/C++ benchmarks code, benchmarks descriptors, and scripts to run these benchmarks
@@ -64,6 +64,6 @@ conda install plotly matplotlib pandas
 jupyter-notebook
 ```
 - Open link which appeared in terminal (e.g. http://127.0.0.1:8888/?token=21312....
-- In the browser there will be listed all files from folder where notebook was run. Open **openmp_benchmarks/processing_results.ipynb** file 
+- In the browser there will be listed all files from folder where notebook was run. Open ```openmp_benchmarks/processing_results.ipynb``` file 
 - Before running the script, modify the following settings to generate results in the desired form. It is possible to generate charts only for a specific benchmark by editing the ```benchmarks``` variable in the script or for a specific processor using the ```CPUS``` variable. It is also possible to generate charts showing acceleration relative to sequential execution, or showing average execution time with standard deviation - this option is controlled by the ```speedup``` variable variable, set to ```True``` or ```False```. Additionally, it is possible to separate charts for compilers using the ```separate_compilers``` variable, which is especially useful useful when one chart contains too much information.
 - Run script by combination of Ctrl+A and Shift + Enter keys or by using the icons on the top of the page
